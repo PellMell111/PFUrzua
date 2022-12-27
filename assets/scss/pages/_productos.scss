@@ -1,0 +1,107 @@
+.mainProductos {
+    section {
+        background-color: rgba(164, 235, 116, 0.5);
+
+        h2 {
+            text-shadow: 0 0 5px black;
+        }
+    
+        .productosBoton {
+            background-image: $radialBoton;
+            text-shadow: 0 0 5px black;
+            box-shadow: 0 0 5px black;
+            border-radius: 15px;
+            text-align: center;
+            transition: 2s;
+    
+            &:hover {
+                transform: scale(1.2);
+                background-image: $radialBotonHover;
+            }
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+
+            h2 {
+                font-size: 2rem;
+                margin: 10px 15px;
+            }
+
+            .box {
+                padding: 10px;
+                margin-bottom: 10px;
+
+                .productosBoton {     
+                    font-size: 2rem;
+                    margin: 5px 90px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: row nowrap;
+
+        h2 {
+            font-size: 3rem;
+            padding: 15px;
+        }
+
+        .productosSemillas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 20px 30px 20px 70px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+
+            h2 {
+                grid-column: 1/3;
+            }
+
+            article {
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .productosArroz {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .productosCacao { 
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .productosMaiz {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .productosMaravilla {
+                grid-column: 2;
+                grid-row: 3;
+            }
+        }
+
+        .productosChocolates {
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 20px 70px 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 50%;
+
+            article {
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+    }
+}
