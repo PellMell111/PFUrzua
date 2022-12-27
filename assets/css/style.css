@@ -365,4 +365,41 @@ footer {
   }
 }
 
+.mainBlog .box {
+  animation: blogFade 4s;
+}
+@keyframes blogFade {
+  0% {
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mainBlog .box {
+    margin: 20px;
+    padding: 10px;
+  }
+  .mainBlog .box section {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .mainBlog .box section span {
+    align-self: center;
+    background-image: radial-gradient(circle, rgb(56, 102, 65) 0%, rgb(149, 185, 83) 56%, rgb(56, 102, 65) 100%);
+    box-shadow: 0 0 15px black;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2rem;
+    transition: 3s;
+  }
+  .mainBlog .box section span:hover {
+    transform: scale(1.2);
+    background-image: radial-gradient(circle, rgb(149, 185, 83) 0%, rgb(56, 102, 65) 56%, rgb(149, 185, 83) 100%);
+  }
+  .mainBlog .box img {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
