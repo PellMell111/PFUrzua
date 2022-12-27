@@ -1,0 +1,96 @@
+header {
+    h1 {
+        padding: 8px 0 0 10px;
+        font-size: 4rem;
+        transition: 1s;
+    
+        &:hover {
+            text-shadow: -1px 0 #1a2c1d, 0 1px #1a2c1d, 1px 0 #1a2c1d, 0 -1px #1a2c1d, 0 0 5px #F2E8CF;;
+        }
+    }
+
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+        div {
+            background-image: linear-gradient(170deg, #386641 40%, #1a2c1d);
+        }
+        h1 {
+            animation: h1FadeIn 3s;
+        }
+
+        @keyframes h1FadeIn {
+            0% {
+                opacity: 0;
+                transform: 
+                    translate(0, -10px);
+            }
+        }
+    
+        ul {
+            padding: 10px 0 10px 0;
+            background-image: linear-gradient(#111812 0% .01%, #2d3d30 5% 95%, #111812 99.9%);
+            
+        }
+    
+        li {
+            padding: 5px 0 0 10px;
+            font-size: 1.5rem;
+            transition: 0.3s;
+            animation: navbarFade 4s;
+
+        @keyframes navbarFade {
+            0% {
+                opacity: 0;
+                transform: 
+                    translate(-5px, 0);
+            }
+        }
+    
+            &:hover {
+                background-color: #578560;
+                transform:
+                    scale(1.01);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-image: linear-gradient(170deg, #386641 40%, #1a2c1d);
+        
+        div {
+            animation: navbarFadeDesk 3s;
+        }
+
+        ul {
+            animation: navbarFadeDesk 4s;
+        }
+
+        @keyframes navbarFadeDesk {
+            0% {
+            opacity: 0;
+            transform: 
+                translate(0,-10px)
+            }
+        }
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                padding: 0 10px;
+            }
+
+            li {
+                padding: 0 10px;
+                font-size: 1.5rem;
+                transition: 1s;
+
+                &:hover {
+                    transform:
+                        scale(1.2);
+                }
+            }
+    }
+}
