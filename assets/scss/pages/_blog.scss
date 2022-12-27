@@ -38,7 +38,41 @@
                 width: 100%;
             }
         }
-    }
 
-    
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 20px 70px;
+            padding: 10px;
+
+            section {
+                display: flex;
+                flex-flow: column nowrap;
+                margin-right: 10px;
+
+                span {
+                    align-self: center;
+                    background-image: $radialBoton;
+                    box-shadow: 0 0 15px black;
+                    padding: 10px 30px;
+                    margin: 20px;
+                    width: 11vw;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 2vw;
+                    transition: 3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-image: $radialBotonHover;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 }
