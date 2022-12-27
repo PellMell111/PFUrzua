@@ -430,6 +430,7 @@ footer {
     background-image: radial-gradient(circle, rgb(149, 185, 83) 0%, rgb(56, 102, 65) 56%, rgb(149, 185, 83) 100%);
   }
   .mainBlog .box img {
+    align-self: center;
     width: 100%;
     object-fit: contain;
   }
