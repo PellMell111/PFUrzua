@@ -549,4 +549,32 @@ footer {
   }
 }
 
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 20px 70px;
+}
+form .input {
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  form textarea {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  form textarea {
+    width: 60%;
+  }
+}
+form .boton {
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 15px black;
+  padding: 10px;
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
