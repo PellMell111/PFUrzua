@@ -1,6 +1,7 @@
 .mainProductos {
     section {
         background-color: rgba(164, 235, 116, 0.5);
+        animation: productosFade 3s;
 
         h2 {
             text-shadow: 0 0 5px black;
@@ -17,6 +18,12 @@
             &:hover {
                 transform: scale(1.2);
                 background-image: $radialBotonHover;
+            }
+        }
+
+        @keyframes productosFade {
+            0% {
+                opacity: 0;
             }
         }
 

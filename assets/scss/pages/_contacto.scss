@@ -5,6 +5,13 @@ form {
     align-content: center;
     align-items: center;
     margin: 20px 70px;
+    animation: contactoFade 3s;
+
+    @keyframes contactoFade {
+        0% {
+            opacity: 0;
+        }
+    }
 
     .input {
         margin-bottom: 10px;

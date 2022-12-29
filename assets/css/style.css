@@ -440,6 +440,7 @@ footer {
 
 .mainProductos section {
   background-color: rgba(164, 235, 116, 0.5);
+  animation: productosFade 3s;
 }
 .mainProductos section h2 {
   text-shadow: 0 0 5px black;
@@ -455,6 +456,11 @@ footer {
 .mainProductos section .productosBoton:hover {
   transform: scale(1.2);
   background-image: radial-gradient(circle, rgb(149, 185, 83) 0%, rgb(56, 102, 65) 56%, rgb(149, 185, 83) 100%);
+}
+@keyframes productosFade {
+  0% {
+    opacity: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .mainProductos section {
@@ -558,6 +564,12 @@ form {
   align-content: center;
   align-items: center;
   margin: 20px 70px;
+  animation: contactoFade 3s;
+}
+@keyframes contactoFade {
+  0% {
+    opacity: 0;
+  }
 }
 form .input {
   margin-bottom: 10px;
