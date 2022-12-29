@@ -25,30 +25,31 @@ header {
             }
         }
     
-        ul {
+        nav {
             padding: 10px 0 10px 0;
             background-image: linear-gradient(#111812 0% .01%, #2d3d30 5% 95%, #111812 99.9%);
+            display: flex;
+            flex-flow: column nowrap;
             
-        }
-    
-        li {
-            padding: 5px 0 0 10px;
-            font-size: 1.5rem;
-            transition: 0.3s;
-            animation: navbarFade 4s;
+            .navbarLink {
+                padding: 5px 0 0 10px;
+                font-size: 1.5rem;
+                transition: 0.3s;
+                animation: navbarFade 4s;
 
-        @keyframes navbarFade {
-            0% {
-                opacity: 0;
-                transform: 
-                    translate(-5px, 0);
+                &:hover {
+                    background-color: #578560;
+                    transform:
+                        scale(1.01);
+                }
             }
-        }
-    
-            &:hover {
-                background-color: #578560;
-                transform:
-                    scale(1.01);
+
+            @keyframes navbarFade {
+                0% {
+                    opacity: 0;
+                    transform: 
+                        translate(-5px, 0);
+                }
             }
         }
     }
@@ -63,7 +64,7 @@ header {
             animation: navbarFadeDesk 3s;
         }
 
-        ul {
+        nav {
             animation: navbarFadeDesk 4s;
         }
 
@@ -75,14 +76,14 @@ header {
             }
         }
 
-            ul {
+            nav {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
                 padding: 0 10px;
             }
 
-            li {
+            .navbarLink {
                 padding: 0 10px;
                 font-size: 1.5rem;
                 transition: 1s;

@@ -40,25 +40,27 @@ header h1:hover {
       transform: translate(0, -10px);
     }
   }
-  header ul {
+  header nav {
     padding: 10px 0 10px 0;
     background-image: linear-gradient(#111812 0% 0.01%, #2d3d30 5% 95%, #111812 99.9%);
+    display: flex;
+    flex-flow: column nowrap;
   }
-  header li {
+  header nav .navbarLink {
     padding: 5px 0 0 10px;
     font-size: 1.5rem;
     transition: 0.3s;
     animation: navbarFade 4s;
+  }
+  header nav .navbarLink:hover {
+    background-color: #578560;
+    transform: scale(1.01);
   }
   @keyframes navbarFade {
     0% {
       opacity: 0;
       transform: translate(-5px, 0);
     }
-  }
-  header li:hover {
-    background-color: #578560;
-    transform: scale(1.01);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -71,7 +73,7 @@ header h1:hover {
   header div {
     animation: navbarFadeDesk 3s;
   }
-  header ul {
+  header nav {
     animation: navbarFadeDesk 4s;
   }
   @keyframes navbarFadeDesk {
@@ -80,18 +82,18 @@ header h1:hover {
       transform: translate(0, -10px);
     }
   }
-  header ul {
+  header nav {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     padding: 0 10px;
   }
-  header li {
+  header .navbarLink {
     padding: 0 10px;
     font-size: 1.5rem;
     transition: 1s;
   }
-  header li:hover {
+  header .navbarLink:hover {
     transform: scale(1.2);
   }
 }
