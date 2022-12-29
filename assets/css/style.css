@@ -564,7 +564,13 @@ form {
   align-content: center;
   align-items: center;
   margin: 20px 70px;
+  padding-top: 20px;
   animation: contactoFade 3s;
+}
+@media only screen and (min-width: 768px) {
+  form {
+    margin-bottom: 50px;
+  }
 }
 @keyframes contactoFade {
   0% {
